@@ -53,7 +53,7 @@
   border-radius: 50px;
 }
 body {
-  animation: colors infinite 8s !important;
+  animation: colors infinite 8s;
   overflow: hidden;
 }
 .App {
@@ -65,19 +65,19 @@ body {
 
 @keyframes colors {
   0% {
-    background-color: #fa5457 !important;
+    background-color: #fa5457;
   }
   25% {
-    background-color: #f6d51f !important;
+    background-color: #f6d51f;
   }
   50% {
-    background-color: #01b4bc !important;
+    background-color: #01b4bc;
   }
   75% {
-    background-color: #fa8925 !important;
+    background-color: #fa8925;
   }
   100% {
-    background-color: #5fa55a !important;
+    background-color: #5fa55a;
   }
 }
 /* 
