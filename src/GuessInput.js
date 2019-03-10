@@ -34,7 +34,7 @@ class GuessInput extends Component {
             }}
             className="input-group-text push_button red"
           >
-            Guess!
+            <h2>Guess!</h2>
           </button>
         </div>
       </div>
