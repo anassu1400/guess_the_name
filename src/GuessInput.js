@@ -24,7 +24,6 @@ class GuessInput extends Component {
                 person = this.props.choosePerson(this.props.peeps);
               }
               //   const pic = this.props.chooseRandomPic(person);
-              console.log(person);
               this.props.handleGuess(person);
               this.props.guessValidation(this.props.guess);
             }}

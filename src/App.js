@@ -26,7 +26,6 @@ class App extends Component {
         </div>
       </td>
     ));
-    console.log(this.state.isOn);
     return (
       <div>
         <audio src={require("./bg.mp3")} autoplay="autoplay" loop="loop" />

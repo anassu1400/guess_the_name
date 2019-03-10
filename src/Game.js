@@ -128,7 +128,6 @@ class Game extends Component {
       if (!this.state.peeps.includes(person)) {
         person = this.choosePerson(this.state.peeps);
       }
-      console.log("peeps" + peeps);
       peepList = peeps.map(person => (
         <td key={person.name[0]} className="listPersonStyle">
           <img
