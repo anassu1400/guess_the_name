@@ -65,19 +65,19 @@ body {
 
 @keyframes colors {
   0% {
-    background-color: #fa5457;
+    background-color: #fa5457 !important;
   }
   25% {
-    background-color: #f6d51f;
+    background-color: #f6d51f !important;
   }
   50% {
-    background-color: #01b4bc;
+    background-color: #01b4bc !important;
   }
   75% {
-    background-color: #fa8925;
+    background-color: #fa8925 !important;
   }
   100% {
-    background-color: #5fa55a;
+    background-color: #5fa55a !important;
   }
 }
 /* 
