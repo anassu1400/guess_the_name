@@ -11,7 +11,8 @@ class NameList extends Component {
         style={{
           float: "right",
           backgroundColor: "white",
-          border: "5px solid black"
+          border: "5px solid black",
+          color: "black"
         }}
       >
         {this.props.peeps ? (
