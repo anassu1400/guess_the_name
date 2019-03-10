@@ -9,7 +9,7 @@ const people = [
     ]
   },
   {
-    name: ["abdullah"],
+    name: ["abdullah", "abdulah"],
     friendshipMeter: 3,
     picUrl: [
       "./avatars/p2/myAvatar.png",
@@ -27,7 +27,7 @@ const people = [
     ]
   },
   {
-    name: ["ayman"],
+    name: ["ayman", "aiman", "aymen"],
     friendshipMeter: 3,
     picUrl: [
       "./avatars/p5/myAvatar.png",
@@ -55,7 +55,7 @@ const people = [
     ]
   },
   {
-    name: ["mishary", "mish", "mishari"],
+    name: ["mashari", "mishary", "mish", "mishari", "mashary"],
     friendshipMeter: 3,
     picUrl: [
       "./avatars/p7/myAvatar.png",

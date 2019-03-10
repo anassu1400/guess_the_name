@@ -62,13 +62,12 @@ class Game extends Component {
       }
       this.setState({ peeps: [...p], bff: bff, winLose: smth });
     } else {
-      health = health - (person.friendshipMeter * 50) / 100;
       if (health <= 0 || p.length === 0) {
         this.setState({ winLose: false });
       } else {
         const enemies = this.state.enemies;
         person.friendshipMeter -= 1;
-        if (person.friendshipMeter === 0) {
+        if (person.friendshipMeter <= 0) {
           enemies.push(person);
         }
         p = [...this.myPeeps(p, [], enemies)];

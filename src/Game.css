@@ -52,7 +52,7 @@
   background-color: red;
   border-radius: 50px;
 }
-#root {
+body {
   animation: colors infinite 8s;
   overflow: hidden;
 }
