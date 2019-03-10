@@ -1,16 +1,28 @@
 import React, { Component } from "react";
+import { WSAEHOSTDOWN } from "constants";
 
 class Person extends Component {
   person = this.props.person;
+  state = {
+    pic: ""
+  };
+  componentDidMount() {
+    this.setState({ pic: this.props.chooseRandomPic(this.props.person) });
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.person !== prevProps.person) {
+      this.setState({ pic: this.props.chooseRandomPic(this.props.person) });
+    }
+  }
 
   render() {
+    let pic = this.state.pic;
     return (
       <div className="Person">
-        <img
-          className="picturePerson"
-          src={require(`${this.props.chooseRandomPic}`)}
-          alt="blah"
-        />
+        {this.state.pic && (
+          <img className="picturePerson" src={require(`${pic}`)} alt="blah" />
+        )}
         <div className="meterBar">
           <div
             className="meter"

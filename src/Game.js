@@ -101,6 +101,7 @@ class Game extends Component {
       return p.picUrl[Math.floor(Math.random() * p.picUrl.length)];
     }
   };
+
   shuffleArray = array => {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -159,7 +160,7 @@ class Game extends Component {
               shuffleArray={this.shuffleArray}
               peeps={this.state.peeps}
             />
-            <Person chooseRandomPic={this.state.pic} person={person} />
+            <Person chooseRandomPic={this.chooseRandomPic} person={person} />
             {/* {person && this.state.pic ? (
               <div>
                 
